@@ -1,0 +1,39 @@
+with open(".gitignore", "w") as f:
+    f.write("""# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTorch and Model Weights
+*.pt
+*.pth
+*.onnx
+runs/
+
+# Datasets
+datasets/
+datasets.zip
+VisDrone2019-DET.zip
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.env
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+""")
